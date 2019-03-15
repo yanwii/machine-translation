@@ -1,6 +1,6 @@
 # 在tensor2tensor中使用自己的语料实现中英文翻译
 
-[tensor2tensor](github.com/tensorflow/tensor2tensor) 是谷歌提出的一个transformer模型。其结构与end-to-end模型类似，但机构中不再使用RNN作为基础神经元，而是采用self-attention自注意力机制来实现上下文信息的传递  
+[tensor2tensor](github.com/tensorflow/tensor2tensor) 是谷歌提出的一个transformer模型。其结构与end-to-end模型类似，但结构中不再使用RNN作为基础神经元，而是采用self-attention自注意力机制来实现上下文信息的传递  
 具体可以参考论文[Attention Is All You Need](https://arxiv.org/abs/1706.03762)  
 transfomer的优势在于它不再像RNN那样具有时序行，整个运算都是并行的。
 
