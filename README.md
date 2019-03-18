@@ -69,8 +69,19 @@ tensor2tensor训练模型分为以下两个步骤
 # 训练
     t2t-trainer --data_dir=data   --output_dir=model   --problem=translate_enzh_sub50k   --model=transformer   --hparams_set=transformer_big   --train_steps=200000   --eval_steps=100 --t2t_usr_dir=user_dir --tmp_dir=tmp/ --decode_hparams="batch_size=1024"
 
+# 结果
 
+训练20w步后可以获得 **30** 的 BLEU
 
-
-
-
+    INFO:tensorflow:Saving dict for global step 207000: 
+    global_step = 207000, 
+    loss = 1.9731357, 
+    metrics-translate_enzh_sub50k/targets/accuracy = 0.5956236, 
+    metrics-translate_enzh_sub50k/targets/accuracy_per_sequence = 0.0, 
+    metrics-translate_enzh_sub50k/targets/accuracy_top5 = 0.80242187, 
+    metrics-translate_enzh_sub50k/targets/approx_bleu_score = 0.300216, 
+    metrics-translate_enzh_sub50k/targets/neg_log_perplexity = -1.9725443, 
+    metrics-translate_enzh_sub50k/targets/rouge_2_fscore = 0.36830086, 
+    metrics-translate_enzh_sub50k/targets/rouge_L_fscore = 0.5878231
+    INFO:tensorflow:Saving 'checkpoint_path' summary for global step 207000: model/model.ckpt-207000
+    
